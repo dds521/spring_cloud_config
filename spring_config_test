@@ -1,0 +1,9 @@
+spring.application.name=spring_boot_eureka_client
+spring.security.user.name=admin
+spring.security.user.password=123456
+server.port=9002
+server.context-path=/eureka_client
+eureka.instance.prefer-ip-address=true
+eureka.instance.lease-renewal-interval-in-seconds=10
+eureka.instance.hostname=localhost
+eureka.client.service-url.defaultZone=http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:9001/eureka/
